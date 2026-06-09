@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>龙族模拟器 AI DM 版</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <header class="hero">
+    <div class="hero-overlay">
+      <p class="eyebrow">AI DM / Dragon Blood Simulator</p>
+      <h1>龙族模拟器</h1>
+      <p class="subtitle">AI 会根据你的行动继续剧情、生成选项、结算属性。终于不是电子选择题了。</p>
+      <button id="startBtn" class="primary">龙之瞳开启</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel stats-panel">
+      <h2>📜 属性数值</h2>
+      <div id="stats"></div>
+      <div class="save-row">
+        <button id="saveBtn">存档</button>
+        <button id="loadBtn">读档</button>
+        <button id="resetBtn">重开</button>
+      </div>
+      <p class="hint">token 不在网页里，放在 Vercel 环境变量。把 key 写进前端这种事，等同于把钱包放校门口。</p>
+    </aside>
+
+    <section class="panel game-panel">
+      <div id="screen"></div>
+      <div id="choices" class="choices"></div>
+      <div class="free-action">
+        <input id="freeInput" placeholder="输入自由行动，例如：我质问芬格尔，卡塞尔到底是什么地方？" />
+        <button id="freeBtn">让 AI DM 推进剧情</button>
+      </div>
+      <div id="loading" class="loading hidden">AI DM 正在编排命运……别急，龙王也要加载。</div>
+    </section>
+  </main>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
