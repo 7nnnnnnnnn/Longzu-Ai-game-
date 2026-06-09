@@ -6,7 +6,6 @@
   --muted:#a8b2c4;
   --line:#2e3a55;
   --gold:#c9a85d;
-  --red:#9c2f38;
 }
 *{box-sizing:border-box}
 body{
@@ -49,7 +48,6 @@ h2{margin:0 0 14px;color:var(--gold)}
 .choices{display:grid;gap:12px;margin-top:20px}
 .choice{text-align:left;padding:15px;line-height:1.65}
 .choice strong{color:#fff}
-.choice span{display:block;color:var(--muted);font-size:13px;margin-top:5px}
 .free-action{display:flex;gap:10px;margin-top:20px}
 input{flex:1;background:#0c111d;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:12px}
 .loading{margin-top:16px;color:var(--gold);line-height:1.7}
